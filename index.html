@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caribe Contracting Group</title>
+<meta name="description" content="Desde alimentos hasta suministros comerciales, ayudamos a empresas e instituciones en Puerto Rico a abastecerse de los productos que necesitan mediante una red confiable de fabricantes y suplidores.">
+<style>
+:root{--navy:#17364d;--blue:#2b617e;--sand:#f7f5f0;--text:#28363f;--muted:#6d7a82;--line:#dfe5e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1100px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:20;backdrop-filter:blur(10px)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:11px}.mark{width:36px;height:36px;border-radius:6px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+.brandtext strong{display:block;color:var(--navy)}.brandtext span{display:block;color:#7d8b93;font-size:9px;letter-spacing:.12em;margin-top:3px}
+.navright{display:flex;align-items:center;gap:20px}.links{display:flex;gap:23px;color:#637078;font-size:14px}
+.lang{display:flex;border:1px solid #ccd6db;border-radius:6px;overflow:hidden}.lang button{border:0;background:#fff;padding:8px 9px;font-weight:700;font-size:11px;color:#6b7981;cursor:pointer}.lang button.active{background:var(--navy);color:#fff}
+.hero{background:#f7fafb}.hero-wrap{display:grid;grid-template-columns:1.03fr .97fr;gap:54px;align-items:center;padding:78px 0}
+.kicker{text-transform:uppercase;font-size:12px;letter-spacing:.13em;font-weight:700;color:var(--blue);margin-bottom:16px}
+h1{margin:0;color:var(--navy);font-size:clamp(42px,5.3vw,64px);line-height:1.04;letter-spacing:-.04em}
+.hero p{color:var(--muted);font-size:18px;line-height:1.72;margin:24px 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 18px;border-radius:6px;font-weight:700;font-size:14px}
+.primary{background:var(--navy);color:#fff}.secondary{border:1px solid #cfd8dd;background:#fff;color:var(--navy)}
+.hero-image{height:410px;border-radius:11px;overflow:hidden;box-shadow:0 18px 45px rgba(23,54,77,.10)}.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.section{padding:76px 0}.alt{background:var(--sand)}.section h2{margin:0 0 12px;color:var(--navy);font-size:35px;letter-spacing:-.025em}
+.lead{max-width:760px;color:var(--muted);line-height:1.7;margin:0 0 34px}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}
+.product-image{height:205px;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block}.product-image.consumer img{object-position:center 55%}
+.product-copy{padding:22px}.product-copy h3{margin:0 0 9px;color:var(--navy);font-size:19px}.product-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+.served{padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.served p{text-align:center;margin:0;color:#596972;line-height:1.7}.served strong{color:var(--navy)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.why-card{padding:24px 0;border-top:2px solid var(--navy)}.why-card h3{color:var(--navy);margin:0 0 8px}.why-card p{color:var(--muted);margin:0;line-height:1.65;font-size:14px}
+.cta{background:var(--navy);color:#fff;border-radius:12px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{color:#fff;margin:0 0 8px;font-size:32px}.cta p{margin:0;color:#c9d5dc;line-height:1.6}.cta .btn{background:#fff;color:var(--navy);white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#7b8991;font-size:12px}.footer{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.links{display:none}.hero-wrap,.product-grid,.why-grid{grid-template-columns:1fr}.hero-image{height:320px}.cta{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <div class="mark">C</div>
+      <div class="brandtext"><strong>Caribe Contracting Group</strong><span>PUERTO RICO</span></div>
+    </a>
+    <div class="navright">
+      <nav class="links">
+        <a href="#suministramos" data-es="Qué suministramos" data-en="What We Supply">Qué suministramos</a>
+        <a href="#porque" data-es="Por qué Caribe" data-en="Why Caribe">Por qué Caribe</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      </nav>
+      <div class="lang">
+        <button id="es" class="active" type="button">ES</button>
+        <button id="en" type="button">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-wrap">
+    <div>
+      <div class="kicker">Puerto Rico</div>
+      <h1 data-es="Abastecimiento para empresas e instituciones." data-en="Supply for businesses and institutions.">Abastecimiento para empresas e instituciones.</h1>
+      <p data-es="Desde alimentos hasta suministros comerciales, ayudamos a empresas e instituciones en Puerto Rico a abastecerse de los productos que necesitan mediante una red confiable de fabricantes y suplidores." data-en="From food to commercial supplies, we help businesses and institutions in Puerto Rico source the products they need through a reliable network of manufacturers and suppliers.">Desde alimentos hasta suministros comerciales, ayudamos a empresas e instituciones en Puerto Rico a abastecerse de los productos que necesitan mediante una red confiable de fabricantes y suplidores.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contacto" data-es="Solicitar cotización" data-en="Request a Quote">Solicitar cotización</a>
+        <a class="btn secondary" href="#suministramos" data-es="Qué suministramos" data-en="What We Supply">Qué suministramos</a>
+      </div>
+    </div>
+    <div class="hero-image"><img src="hero.jpg.jpg" alt="Pallets y mercancía en almacén"></div>
+  </div>
+</section>
+
+<section class="section" id="suministramos">
+  <div class="container">
+    <h2 data-es="Qué suministramos" data-en="What We Supply">Qué suministramos</h2>
+    <p class="lead" data-es="Trabajamos con una variedad de categorías para apoyar las necesidades diarias de empresas e instituciones." data-en="We work across a range of categories to support the day-to-day needs of businesses and institutions.">Trabajamos con una variedad de categorías para apoyar las necesidades diarias de empresas e instituciones.</p>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-image"><img src="alimentos.jpg.jpg" alt="Alimentos"></div>
+        <div class="product-copy">
+          <h3 data-es="Alimentos" data-en="Food">Alimentos</h3>
+          <p data-es="Arroz, bebidas, productos de despensa, snacks, congelados y otros alimentos para clientes comerciales e institucionales." data-en="Rice, beverages, pantry staples, snacks, frozen products, and other food items for commercial and institutional customers.">Arroz, bebidas, productos de despensa, snacks, congelados y otros alimentos para clientes comerciales e institucionales.</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image consumer"><img src="consumo.jpg.jpg" alt="Productos de consumo"></div>
+        <div class="product-copy">
+          <h3 data-es="Productos de consumo" data-en="Consumer Products">Productos de consumo</h3>
+          <p data-es="Productos de limpieza, alcohol isopropílico, guantes, desechables y otros suministros para la operación diaria." data-en="Cleaning products, isopropyl alcohol, gloves, disposables, and other supplies for day-to-day operations.">Productos de limpieza, alcohol isopropílico, guantes, desechables y otros suministros para la operación diaria.</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"><img src="soluciones.jpg.jpg" alt="Soluciones de abastecimiento"></div>
+        <div class="product-copy">
+          <h3 data-es="Soluciones de abastecimiento" data-en="Sourcing Solutions">Soluciones de abastecimiento</h3>
+          <p data-es="Si el producto que necesita no forma parte de nuestro catálogo, trabajamos para identificar fabricantes y suplidores que puedan cumplir con sus requisitos." data-en="If the product you need is not part of our regular offering, we work to identify manufacturers and suppliers that can meet your requirements.">Si el producto que necesita no forma parte de nuestro catálogo, trabajamos para identificar fabricantes y suplidores que puedan cumplir con sus requisitos.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="served">
+  <div class="container">
+    <p><strong data-es="Atendemos:" data-en="We serve:">Atendemos:</strong><span data-es=" supermercados, distribuidores, restaurantes, hoteles, hospitales, empresas e instituciones gubernamentales en Puerto Rico." data-en=" supermarkets, distributors, restaurants, hotels, hospitals, businesses, and government institutions across Puerto Rico."> supermercados, distribuidores, restaurantes, hoteles, hospitales, empresas e instituciones gubernamentales en Puerto Rico.</span></p>
+  </div>
+</section>
+
+<section class="section alt" id="porque">
+  <div class="container">
+    <h2 data-es="Por qué Caribe" data-en="Why Caribe">Por qué Caribe</h2>
+    <p class="lead" data-es="Un enfoque simple: comunicación directa, flexibilidad y respuesta rápida." data-en="A straightforward approach: direct communication, flexibility, and quick response.">Un enfoque simple: comunicación directa, flexibilidad y respuesta rápida.</p>
+    <div class="why-grid">
+      <div class="why-card"><h3 data-es="Un solo punto de contacto" data-en="One Point of Contact">Un solo punto de contacto</h3><p data-es="Desde la cotización hasta la entrega, trabajará directamente con la persona responsable de coordinar su solicitud." data-en="From quote to delivery, you work directly with the person responsible for coordinating your request.">Desde la cotización hasta la entrega, trabajará directamente con la persona responsable de coordinar su solicitud.</p></div>
+      <div class="why-card"><h3 data-es="Flexibilidad" data-en="Flexibility">Flexibilidad</h3><p data-es="Nos adaptamos a las necesidades de cada cliente, ya sea un producto específico o un requerimiento de abastecimiento más amplio." data-en="We adapt to each customer's needs, whether it is a specific product or a broader sourcing requirement.">Nos adaptamos a las necesidades de cada cliente, ya sea un producto específico o un requerimiento de abastecimiento más amplio.</p></div>
+      <div class="why-card"><h3 data-es="Respuesta ágil" data-en="Quick Response">Respuesta ágil</h3><p data-es="Priorizamos una comunicación clara y tiempos de respuesta rápidos para mantener su operación en movimiento." data-en="We prioritize clear communication and quick response times to keep your operation moving.">Priorizamos una comunicación clara y tiempos de respuesta rápidos para mantener su operación en movimiento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2 data-es="¿Busca un producto o un nuevo suplidor?" data-en="Looking for a product or a new supplier?">¿Busca un producto o un nuevo suplidor?</h2>
+        <p data-es="Cuéntenos qué necesita y trabajaremos para identificar una solución." data-en="Tell us what you need and we will work to identify a solution.">Cuéntenos qué necesita y trabajaremos para identificar una solución.</p>
+      </div>
+      <a class="btn" href="mailto:mpereira@caribecg.com" data-es="Solicitar cotización" data-en="Request a Quote">Solicitar cotización</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div>Caribe Contracting Group LLC</div><div>San Juan, Puerto Rico</div></div></footer>
+
+<script>
+const esBtn=document.getElementById('es'), enBtn=document.getElementById('en'), nodes=document.querySelectorAll('[data-es][data-en]');
+function setLanguage(lang){
+  document.documentElement.lang=lang;
+  nodes.forEach(el=>el.textContent=el.dataset[lang]);
+  esBtn.classList.toggle('active',lang==='es');
+  enBtn.classList.toggle('active',lang==='en');
+}
+esBtn.onclick=()=>setLanguage('es');
+enBtn.onclick=()=>setLanguage('en');
+setLanguage('es');
+</script>
+</body>
+</html>
